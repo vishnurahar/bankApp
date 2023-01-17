@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/select_acc_type_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/account_type"
+            android:textColor="@color/primary600"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="Savings Account"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/initial_deposit_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:padding="2dp"
+            android:text="@string/enter_initial_deposit_amount"
+            android:textSize="14sp"
+            android:textColor="@color/grey600"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/select_acc_type_text_view" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/rupees_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs."
+            android:layout_marginStart="24dp"
+            android:textSize="20sp"
+            android:padding="18dp"
+            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/initial_balance_edit_text"
+            app:layout_constraintTop_toTopOf="@+id/initial_balance_edit_text" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/initial_balance_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="@string/enter_deposit_amount"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="14dp"
+            android:textSize="20sp"
+            android:textColor="@color/grey900"
+            android:textColorHint="@color/grey600"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/rupees_text_view"
+            app:layout_constraintTop_toBottomOf="@+id/initial_deposit_text_view" />
+
+        <TextView
+            android:id="@+id/interest_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="30dp"
+            android:padding="2dp"
+            android:text="@string/interest_rate"
+            android:textSize="16sp"
+            android:textColor="@color/grey600"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/initial_balance_edit_text" />
+
+        <TextView
+            android:id="@+id/interest_value_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:layout_marginTop="5dp"
+            android:text="0%"
+            android:textColor="@color/primary600"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/interest_text_view"
+            app:layout_constraintTop_toBottomOf="@+id/interest_text_view" />
+
+        <TextView
+            android:id="@+id/nrv_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:padding="2dp"
+            android:text="@string/net_relationship_value"
+            android:textSize="16sp"
+            android:textColor="@color/grey600"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/interest_value_text_view" />
+
+        <TextView
+            android:id="@+id/nrv_value_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="100000"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/primary600"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/nrv_text_view"
+            app:layout_constraintTop_toBottomOf="@+id/nrv_text_view" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/open_acc_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:background="@drawable/cta_text_bg"
+            android:paddingVertical="18dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/open_account"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

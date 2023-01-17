@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/auth_constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/header_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:lineSpacingExtra="-8sp"
+            android:text="@string/sign_up"
+            android:textColor="@color/primary600"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="18dp"
+            android:textColor="@color/grey900"
+            android:textColorHint="@color/grey600"
+            app:layout_constraintBottom_toTopOf="@+id/email_edit_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header_text_view" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/email_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="18dp"
+            android:textColor="@color/grey900"
+            android:textColorHint="@color/grey600"
+            app:layout_constraintBottom_toTopOf="@+id/password_edit_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_edit_text" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/password_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="18dp"
+            android:textColor="@color/grey900"
+            android:textColorHint="@color/grey600"
+            app:layout_constraintBottom_toTopOf="@+id/phone_edit_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email_edit_text" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/phone_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="@string/phone"
+            android:inputType="number"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="18dp"
+            android:textColor="@color/grey900"
+            android:textColorHint="@color/grey600"
+            app:layout_constraintBottom_toTopOf="@+id/address_edit_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_edit_text" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/address_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+
+            android:background="@drawable/edit_text_bg"
+            android:hint="@string/address"
+            android:inputType="textPostalAddress"
+            android:maxLines="1"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="18dp"
+            android:textColor="@color/grey900"
+            android:textColorHint="@color/grey600"
+            app:layout_constraintBottom_toTopOf="@+id/age_edit_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phone_edit_text" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/age_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="@string/age"
+            android:inputType="number"
+            android:maxLength="2"
+            android:maxLines="1"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="18dp"
+            android:textColor="@color/grey900"
+            android:textColorHint="@color/grey600"
+            app:layout_constraintBottom_toTopOf="@+id/cta_text_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/address_edit_text" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/cta_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/cta_text_bg"
+            android:paddingVertical="18dp"
+            android:text="@string/create_account"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/bottom_text_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/bottom_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="20dp"
+            android:padding="2dp"
+            android:text="@string/do_you_have_account"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/switch_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:padding="2dp"
+            android:text="@string/sign_in"
+            android:textColor="@color/primary500"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/bottom_text_view"
+            app:layout_constraintStart_toEndOf="@+id/bottom_text_view"
+            app:layout_constraintTop_toTopOf="@+id/bottom_text_view" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

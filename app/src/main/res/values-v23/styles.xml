@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary500</item>
+        <item name="colorPrimaryDark">@color/primary600</item>
+        <item name="colorAccent">@color/primary500</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:textColor">@color/grey900</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/white</item>
+    </style>
+</resources>
